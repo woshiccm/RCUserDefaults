@@ -120,8 +120,4 @@ extension RCUserDefaults {
     @NSManaged var dictionary: [String: Int]
     @NSManaged var dictionaryOptional: [String: Int]?
     @NSManaged var dictionaryEmpty: [String: Int]
-
-    @NSManaged var set: Set<Int>
-    @NSManaged var setOptional: Set<Int>?
-    @NSManaged var setEmpty: Set<Int>
 }

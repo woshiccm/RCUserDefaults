@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9C8163FD22475F6600983CDC /* RCUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8163FB22475F6600983CDC /* RCUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C81640422475F8400983CDC /* RCUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81640322475F8400983CDC /* RCUserDefaults.swift */; };
-		9C8164062247633700983CDC /* ObjCTypeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8164052247633700983CDC /* ObjCTypeEncoding.swift */; };
 		9C81640822476A0E00983CDC /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81640722476A0E00983CDC /* Property.swift */; };
 		9C816410224796EF00983CDC /* RCUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81640F224796EF00983CDC /* RCUserDefaultsTests.swift */; };
 		9C816412224796EF00983CDC /* RCUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8163F822475F6600983CDC /* RCUserDefaults.framework */; };
@@ -30,7 +29,6 @@
 		9C8163FB22475F6600983CDC /* RCUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCUserDefaults.h; sourceTree = "<group>"; };
 		9C8163FC22475F6600983CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C81640322475F8400983CDC /* RCUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCUserDefaults.swift; sourceTree = "<group>"; };
-		9C8164052247633700983CDC /* ObjCTypeEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCTypeEncoding.swift; sourceTree = "<group>"; };
 		9C81640722476A0E00983CDC /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		9C81640D224796EF00983CDC /* RCUserDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCUserDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C81640F224796EF00983CDC /* RCUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCUserDefaultsTests.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			children = (
 				9C8163FB22475F6600983CDC /* RCUserDefaults.h */,
 				9C81640322475F8400983CDC /* RCUserDefaults.swift */,
-				9C8164052247633700983CDC /* ObjCTypeEncoding.swift */,
 				9C81640722476A0E00983CDC /* Property.swift */,
 				9C8163FC22475F6600983CDC /* Info.plist */,
 			);
@@ -205,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C81640822476A0E00983CDC /* Property.swift in Sources */,
-				9C8164062247633700983CDC /* ObjCTypeEncoding.swift in Sources */,
 				9C81640422475F8400983CDC /* RCUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

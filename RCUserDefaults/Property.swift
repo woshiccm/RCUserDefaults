@@ -9,7 +9,34 @@
 import Foundation
 import ObjectiveC
 
-struct Property: CustomStringConvertible {
+/// Objective-C type encoding
+enum ObjCTypeEncoding {
+    case int
+    case longLong
+    case float
+    case double
+    case bool
+    case char
+    case object
+
+    case unknown(String)
+
+    init(_ encoding: String) {
+        switch encoding {
+        case "i": self = .int
+        case "q": self = .longLong
+        case "f": self = .float
+        case "d": self = .double
+        case "B": self = .bool
+        case "c": self = .char
+        case "@": self = .object
+        default:
+            self = .unknown(encoding)
+        }
+    }
+}
+
+struct Property {
 
     let name: String
 
@@ -60,10 +87,6 @@ struct Property: CustomStringConvertible {
         }
 
         free(attributeList)
-    }
-
-    public var description: String {
-        return "[objc_property name: \(self.name)]"
     }
 }
 

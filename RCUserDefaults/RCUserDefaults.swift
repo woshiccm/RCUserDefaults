@@ -14,7 +14,7 @@ class RCUserDefaults: NSObject {
 
     public static let standard = RCUserDefaults()
 
-    let userDefaults: UserDefaults
+    public let userDefaults: UserDefaults
 
     private static var mapping: [String: Property] = [ : ]
 
@@ -54,11 +54,9 @@ extension RCUserDefaults {
             case .int, .longLong:
                 getterImp = unsafeBitCast(_Self.longGetter, to: IMP.self)
                 setterImp = unsafeBitCast(_Self.longSetter, to: IMP.self)
-            case .bool:
+            case .bool, .char:
                 getterImp = unsafeBitCast(_Self.boolGetter, to: IMP.self)
                 setterImp = unsafeBitCast(_Self.boolSetter, to: IMP.self)
-            case .char:
-                print("")
             case .float:
                 getterImp = unsafeBitCast(_Self.floatGetter, to: IMP.self)
                 setterImp = unsafeBitCast(_Self.floatSetter, to: IMP.self)
